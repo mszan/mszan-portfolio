@@ -1,0 +1,9 @@
+.workWrapper {
+    min-height: 100vh;
+    background: linear-gradient(rgb(234, 239, 245), rgba(115, 149, 187, .36));
+    padding: 25px 25px 25px 5vw;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on safari */
+    scroll-snap-type: x mandatory; /* snap points */
+}
