@@ -1,0 +1,23 @@
+.titleWrapper {
+    position: absolute;
+    top: 360px;
+    right: 10px;
+    text-align: right;
+    color: #21261b;
+    filter: drop-shadow(0px 3px 6px rgba(33, 38, 27, 0.2));
+}
+
+.titleHello {
+    font-weight: lighter;
+    font-size: 34px;
+}
+
+.titleIm {
+    font-weight: normal;
+    font-size: 65px;
+}
+
+.titleDawid {
+    font-weight: bold;
+    font-size: 65px;
+}

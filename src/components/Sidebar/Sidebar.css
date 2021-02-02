@@ -1,0 +1,32 @@
+.sidebarOverlay {
+    background-image: linear-gradient(
+            to right,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.6)
+    );
+}
+
+.sidebarContent {
+    position: fixed!important;
+    top: 70px!important;
+    left: -10px!important;
+    /*margin-left: -10px;*/
+}
+
+.sidebarUl {
+    list-style-type: none;
+}
+
+.sidebarUl a {
+    text-decoration: none;
+    color: #b7b7b7;
+    font-size: 28px;
+    font-weight: lighter;
+    line-height: 50px;
+}
+
+.sidebarSocialsWrapper {
+    position: fixed;
+    left: 40px;
+    bottom: 30px!important;
+}
