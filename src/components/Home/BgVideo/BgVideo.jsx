@@ -20,7 +20,7 @@ export class BgVideo extends React.Component {
                     muted
                     loop
                     style={{
-                        height: "100%"
+                        height: "100%",
                     }}
                 >
                     <source src={BgVideoInput} type="video/mp4" />

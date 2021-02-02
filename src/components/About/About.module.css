@@ -1,0 +1,34 @@
+.aboutWrapper {
+    position: relative;
+    /*min-height: 120vh;*/
+    background: linear-gradient(0deg, rgba(234,239,245,1) 0%, rgba(115,149,187,1) 92%, rgba(255,255,255, 0) 100%);
+    margin-top: -10vh!important;
+}
+
+.aboutContent {
+    padding: 15vh 35vw 15vh 10vw;
+}
+
+.aboutContent p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.aboutContent p span {
+    font-weight: normal;
+}
+
+.aboutSocial {
+    margin-top: 125px;
+    bottom: 5vh;
+}
+
+.aboutSocial img {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.aboutTitle {
+    font-weight: normal;
+    font-size: 5rem;
+}
