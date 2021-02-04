@@ -1,0 +1,76 @@
+.contactWrapper {
+    position: relative;
+    min-height: 80vh;
+    background: linear-gradient(rgba(115, 149, 187, .36), rgba(131, 120, 98, .25));
+    padding: 25px 25px 25px 5vw;
+}
+
+.contactForm {
+    position: relative;
+    top: 50px;
+    border-radius: 30px;
+    background-color: #EDF6FF;
+    /*height: 30vh;*/
+    padding: 25px;
+    box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
+}
+
+.contactForm button {
+    width: 100%;
+    color: #3B4E62;
+}
+
+.contactForm input,
+.contactForm textarea {
+    background-color: #F4F9FF;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
+    padding: 25px 25px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: lighter;
+    color: #6d7784;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.contactForm textarea {
+    resize: none;
+}
+
+.contactForm input::placeholder,
+.contactForm input::-webkit-input-placeholder,
+.contactForm textarea::placeholder,
+.contactForm textarea::-webkit-input-placeholder {
+    color: #b4bbc6 !important;
+    font-size: 1.2rem;
+}
+
+.contactForm input::-webkit-input-placeholder {
+    color:#AFB2B3;
+}
+.contactForm input::-moz-placeholder {
+    color:#AFB2B3;
+}
+.contactForm input::-ms-input-placeholder {
+    color:#AFB2B3;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+}
+
+.footerWrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    left: 0;
+    text-align: center;
+    color: #7d96b1;
+}
+
