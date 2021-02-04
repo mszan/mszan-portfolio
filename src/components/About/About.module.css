@@ -1,16 +1,22 @@
 .aboutWrapper {
     position: relative;
-    /*min-height: 120vh;*/
-    background: linear-gradient(0deg, rgba(234,239,245,1) 0%, rgba(115,149,187,1) 92%, rgba(255,255,255, 0) 100%);
-    margin-top: -10vh!important;
+    /*min-height: 140vh;*/
+    background: linear-gradient(0deg, rgba(234,239,245,1) 0%, rgba(115,149,187,1) 94%, rgba(255,255,255, 0) 100%);
+    margin-top: -10vh;
+    /*bottom: 0;*/
+    /*margin-top: -10vh!important;*/
 }
 
 .aboutContent {
-    padding: 15vh 10vw 15vh 10vw;
+    scroll-snap-align: start!important;
+    position: relative;
+    top: 60px;
+    padding: 40px 10vw 120px 10vw;
+    text-shadow: 0 3px 15px rgba(33, 38, 27, .20);
 }
 
 .aboutContent p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -19,16 +25,18 @@
 }
 
 .aboutSocial {
-    margin-top: 125px;
+    /*margin-top: 125px;*/
     bottom: 5vh;
 }
 
 .aboutSocial img {
-    height: 55px;
-    margin-bottom: 15px;
+    height: 35px;
+    margin-right: 4px;
+    /*margin-bottom: 15px;*/
 }
 
 .aboutTitle {
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 35px;
 }
