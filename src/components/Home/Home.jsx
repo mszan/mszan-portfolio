@@ -1,6 +1,7 @@
 import React from "react";
 import {BgVideo} from "./BgVideo/BgVideo";
 import {Title} from "./Title";
+import homeClasses from "./Home.module.css"
 
 export class Home extends React.Component {
     constructor(props) {
@@ -10,11 +11,7 @@ export class Home extends React.Component {
 
     render() {
         return (
-            <div
-                style={{
-                    overflow: "hidden"
-                }}
-            >
+            <div className={homeClasses.homeWrapper}>
                 <BgVideo />
                 <Title />
             </div>

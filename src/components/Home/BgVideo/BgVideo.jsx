@@ -1,5 +1,6 @@
 import React from "react";
 import BgVideoInput from "./1.mp4";
+import bgVideoClasses from "./BgVideo.module.css"
 
 export class BgVideo extends React.Component {
     constructor(props) {
@@ -9,19 +10,12 @@ export class BgVideo extends React.Component {
 
     render() {
         return (
-            <div
-                style={{
-                    height: "110vh",
-                    marginLeft: "-620px",
-                }}
-            >
+            <div className={bgVideoClasses.bgVideoWrapper}>
                 <video
                     autoPlay
                     muted
                     loop
-                    style={{
-                        height: "100%",
-                    }}
+                    style={{height: "100%",}}
                 >
                     <source src={BgVideoInput} type="video/mp4" />
                 </video>
