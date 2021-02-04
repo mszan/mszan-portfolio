@@ -1,4 +1,4 @@
 .homeWrapper {
-    overflow: hidden;
+    /*overflow: hidden;*/
     scroll-snap-align: start!important;
 }

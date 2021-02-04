@@ -40,3 +40,18 @@
     font-size: 2rem;
     margin-bottom: 35px;
 }
+
+.aboutManImgWrapper {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 100px;
+    opacity: 0.1;
+    width: 100vw;
+    height: 150vh;
+    overflow: hidden!important;
+}
+
+.aboutManImg {
+    position: absolute;
+    height: 800px;
+}

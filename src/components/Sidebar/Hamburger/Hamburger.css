@@ -1,8 +1,8 @@
 .hamburger {
     z-index: 100;
     margin: 25px;
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -39,11 +39,11 @@
 }
 
 .hamburger span:nth-child(2),.hamburger span:nth-child(3) {
-    top: 18px;
+    top: 12px;
 }
 
 .hamburger span:nth-child(4) {
-    top: 36px;
+    top: 24px;
 }
 
 .hamburger.open span {
@@ -51,7 +51,7 @@
 }
 
 .hamburger.open span:nth-child(1) {
-    top: 18px;
+    top: 12px;
     width: 0;
     left: 50%;
 }
@@ -71,7 +71,7 @@
 }
 
 .hamburger.open span:nth-child(4) {
-    top: 18px;
+    top: 12px;
     width: 0;
     left: 50%;
 }

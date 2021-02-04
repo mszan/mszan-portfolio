@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 html {
-  scroll-snap-type: y mandatory;
+  /*-webkit-overflow-scrolling: touch; !* smooth scroll on safari *!*/
 }
 
 
@@ -74,7 +74,17 @@ button:focus {
 
 /**/
 
-.container > div {
-  scroll-snap-align: start!important;
+.container {
+  overflow: hidden;
+  /*TODO: scroll-snap fix - to be cross-browser*/
+  /*height: 200vh;*/
+  /*position: relative;*/
+  /*overflow-y: scroll;*/
+  /*scroll-snap-type: y mandatory;*/
+  /*-webkit-scroll-snap-type: y mandatory;*/
 }
+
+/*.container > div {*/
+/*  scroll-snap-align: start!important;*/
+/*}*/
 
