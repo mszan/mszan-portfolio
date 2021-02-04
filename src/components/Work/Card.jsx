@@ -18,6 +18,8 @@ export class Card extends React.Component {
                         <hr style={{borderColor: "rgba(115, 149, 187, 0.05)"}}/>
                         <p>{this.props.description}</p>
                     </div>
+                </div>
+                <div className={cardClasses.cardBtnsWrapper}>
                     <button onClick={() => window.open(this.props.repoUrl, '_blank')} className="btnLight">Repository</button>
                     <button onClick={() => window.open(this.props.demoUrl, '_blank')} className="btnDark" style={{whiteSpace:"nowrap"}}>Live demo</button>
                 </div>

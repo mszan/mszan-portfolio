@@ -7,7 +7,7 @@ import {About} from "../About/About";
 
 function App() {
   return (
-    <div>
+    <div className="container">
         <Sider />
         <Row>
             <Col span={24}>

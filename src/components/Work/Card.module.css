@@ -1,20 +1,22 @@
 .cardWrapper {
     border-radius: 30px;
     background-color: #EDF6FF;
-    width: 80vw;
-    height: 70vh;
-    padding: 45px;
+    width: 75vw;
+    height: 80vh;
+    padding: 15px;
     margin-right: 3vw;
+    margin-top: 65px;
     flex-shrink: 0;
     scroll-snap-align: center;
     scroll-behavior: smooth;
     box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
+    position: relative;
 }
 
 .cardThumbnail {
     border-radius: 30px;
     width: 100%;
-    height: 55vh;
+    height: 30vh;
     box-shadow: 0 3px 25px rgba(33, 38, 27, .20);
     background-repeat: no-repeat;
     background-position: center;
@@ -22,27 +24,42 @@
 }
 
 .cardBottom {
-    height: 15vh;
-    display: flex;
+    /*height: 15vh;*/
+    /*display: flex;*/
+    /*display: inline-block;*/
     margin-top: 25px;
-    align-items: center;
+    /*align-items: center;*/
 }
 
-.cardBottom button {
-    height: 70%
+.cardBtnsWrapper button {
+    /*height: 70%;*/
+    padding: 5%;
+    width: 46%;
 }
 
-.cardBottom button:first-of-type {
-    margin-right: 30px;
+.cardBtnsWrapper button:first-of-type {
+    margin-right: 2%;
+}
+
+.cardBtnsWrapper button:last-of-type {
+    margin-left: 2%;
 }
 
 .cardText {
-    margin-right: 100px;
+    /*margin-right: 100px;*/
     color: #7395BB;
 }
 
 .cardText h4 {
-    font-size: 35px;
+    font-size: 1.5rem;
     font-weight: normal!important;
     margin: 0;
+}
+
+.cardBtnsWrapper {
+    position: absolute;
+    padding: inherit;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 15px);
 }

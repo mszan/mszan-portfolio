@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -34,7 +39,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 16px 31px;
-  font-size: 28px;
+  font-size: 1.2rem;
   font-weight: 200;
   text-decoration: none;
   box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
@@ -65,5 +70,11 @@ button:focus {
 
 .btnDark:hover {
   background-color: #587da0;
+}
+
+/**/
+
+.container > div {
+  scroll-snap-align: start!important;
 }
 
