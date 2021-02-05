@@ -2,3 +2,27 @@
     height: 110vh;
     margin-left: -620px;
 }
+
+@media (min-width: 768px) {
+    .bgVideoWrapper {
+        margin-left: -300px;
+    }
+}
+
+@media (min-width: 968px) {
+    .bgVideoWrapper {
+        margin-left: -125px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .bgVideoWrapper {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .bgVideoWrapper video {
+        transform: scale(1.2) translateY(-14px); /*sea level doesn't change*/
+    }
+}

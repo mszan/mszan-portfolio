@@ -24,11 +24,15 @@
 }
 
 .cardBottom {
-    /*height: 15vh;*/
-    /*display: flex;*/
-    /*display: inline-block;*/
     margin-top: 25px;
-    /*align-items: center;*/
+}
+
+.cardBtnsWrapper {
+    position: absolute;
+    padding: inherit;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 15px);
 }
 
 .cardBtnsWrapper button {
@@ -46,7 +50,6 @@
 }
 
 .cardText {
-    /*margin-right: 100px;*/
     color: #7395BB;
 }
 
@@ -56,10 +59,36 @@
     margin: 0;
 }
 
-.cardBtnsWrapper {
-    position: absolute;
-    padding: inherit;
-    bottom: 0;
-    left: 0;
-    width: calc(100% - 15px);
+@media (min-width: 968px) {
+    .cardWrapper {
+        padding: 40px;
+    }
+
+    .cardThumbnail {
+        height: 60vh;
+    }
+
+    .cardBottom {
+        margin-top: 20px;
+    }
+
+    .cardText {
+        margin-right: 400px;
+    }
+
+    .cardBtnsWrapper {
+        display: flex;
+        width: calc(100% - 80px);
+        margin-bottom: 10px;
+        justify-content: flex-end;
+    }
+
+    .cardBtnsWrapper button {
+        padding: 2%;
+        width: fit-content;
+    }
+
+    .cardBtnsWrapper button:first-of-type {
+        margin: 0 -1% 0 0;
+    }
 }
