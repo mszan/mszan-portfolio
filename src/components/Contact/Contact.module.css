@@ -2,15 +2,14 @@
     scroll-snap-align: start!important;
     position: relative;
     min-height: 90vh;
-    background: linear-gradient(rgba(115, 149, 187, .36), rgba(131, 120, 98, .25));
+    /*background: linear-gradient(rgba(115, 149, 187, .36), rgba(131, 120, 98, .25));*/
     padding: 25px 25px 25px 5vw;
 }
 
 .contactForm {
     position: relative;
     top: 50px;
-    border-radius: 30px;
-    background-color: #EDF6FF;
+    background-color: #242830;
     /*height: 30vh;*/
     padding: 25px;
     box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
@@ -23,9 +22,8 @@
 
 .contactForm input,
 .contactForm textarea {
-    background-color: #F4F9FF;
+    background-color: #2C2F37;
     border: none;
-    border-radius: 30px;
     box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
     -webkit-appearance: none;
     -webkit-box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
@@ -52,10 +50,10 @@
 }
 
 .contactForm input::-webkit-input-placeholder {
-    color:#AFB2B3;
+    color: #AFB2B3;
 }
 .contactForm input::-moz-placeholder {
-    color:#AFB2B3;
+    color: #AFB2B3;
 }
 .contactForm input::-ms-input-placeholder {
     color:#AFB2B3;

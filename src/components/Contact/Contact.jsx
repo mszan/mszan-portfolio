@@ -15,7 +15,7 @@ export class Contact extends React.Component {
                         <input type="text" placeholder="Name" />
                         <input type="text" placeholder="Email" />
                         <textarea rows={3} placeholder="Message" />
-                        <button onClick={() => console.log("will be sending smth")} className="btnLight">Send</button>
+                        <button onClick={() => console.log("will be sending smth")} className="btnLight">SEND</button>
                     </div>
                     <div className={contactClasses.footerWrapper}>
                         <span>

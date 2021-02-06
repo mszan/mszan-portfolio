@@ -1,0 +1,12 @@
+.homeBtnsWrapper {
+    position: relative;
+}
+
+.homeBtnsWrapper button {
+    padding: 4%;
+    /*height: ;*/
+}
+
+.homeBtnsWrapper button:first-of-type {
+    margin-right: 2%
+}

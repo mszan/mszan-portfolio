@@ -6,6 +6,8 @@ html {
 
 
 body {
+  background-color: #1D2026;
+  color: #8A94A7;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;  /* because chrome seems not to recignise font family */
@@ -35,12 +37,11 @@ button styles
 
 button {
   font-family: inherit; /* because chrome seems not to recignise font family */
-  border-radius: 28px;
   border: none;
   cursor: pointer;
   padding: 16px 31px;
-  font-size: 1.2rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: normal;
   text-decoration: none;
   box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
   transition: background-color 150ms ease-in-out;
@@ -55,21 +56,13 @@ button:focus {
 }
 
 .btnLight {
-  background-color: #F4F4F4;
-  color: #7395BB;
-}
-
-.btnLight:hover {
-  background-color: #e8e8e8;
+  background-color: #3889F1;
+  color: #FFF!important;
 }
 
 .btnDark {
-  background-color: #7395BB;
-  color: #FFF;
-}
-
-.btnDark:hover {
-  background-color: #587da0;
+  background-color: #242830;
+  color: #FFF!important;
 }
 
 /**/

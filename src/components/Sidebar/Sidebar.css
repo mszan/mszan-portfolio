@@ -1,9 +1,17 @@
 .sidebarOverlay {
-    background-image: linear-gradient(
-            to right,
-            rgba(0,0,0,0.9),
-            rgba(0,0,0,0.6)
-    );
+    background: linear-gradient(to right, #1D2026, rgba(29,32,38,.25));
+    /* // must be gradient to override react-sidebar style */
+}
+
+.sidebarOverlay::before {
+    content: ' ';
+    position: absolute;
+    background-color: #202228;
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 150vh;
+    transform: rotateZ(10deg);
 }
 
 .sidebarContent {
@@ -18,7 +26,7 @@
 
 .sidebarUl a {
     text-decoration: none;
-    color: #b7b7b7;
+    color: #fff!important;
     font-size: 28px;
     font-weight: lighter;
     line-height: 50px;
@@ -27,5 +35,14 @@
 .sidebarSocialsWrapper {
     position: fixed;
     left: 40px;
+    width: 100px;
     /*bottom: 30px!important;*/
+}
+
+.sidebarSocialsWrapper img:first-of-type {
+    margin-right: 10%;
+}
+
+.sidebarSocialsWrapper img {
+    width: 2.5rem;
 }

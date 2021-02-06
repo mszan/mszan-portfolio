@@ -1,10 +1,14 @@
 .aboutWrapper {
     position: relative;
-    /*min-height: 140vh;*/
-    background: linear-gradient(0deg, rgba(234,239,245,1) 0%, rgba(115,149,187,1) 94%, rgba(255,255,255, 0) 100%);
+    min-height: 100vh;
+    /*background: linear-gradient(0deg, rgba(234,239,245,1) 0%, rgb(158, 171, 196) 94%, rgba(255,255,255, 0) 100%);*/
     margin-top: -10vh;
     /*bottom: 0;*/
     /*margin-top: -10vh!important;*/
+}
+
+.aboutSubTitle {
+    color: #fff
 }
 
 .aboutContent {
@@ -27,6 +31,7 @@
 
 .aboutSocial {
     /*margin-top: 125px;*/
+    color: #fff;
     bottom: 5vh;
 }
 
@@ -40,46 +45,18 @@
     font-weight: normal;
     font-size: 2rem;
     margin-bottom: 35px;
-}
-
-.aboutManImgWrapper {
-    position: absolute;
-    margin-top: 250px;
-    margin-left: 30%;
-    opacity: 0.1;
-    width: 100vw;
-    height: 150vh;
-    overflow: hidden!important;
-}
-
-.aboutManImg {
-    position: absolute;
-    height: 800px;
-    /*TODO: add box-shadow or modify source?*/
+    color: #FFFFFF;
 }
 
 @media (min-width: 480px) {
-    .aboutManImgWrapper {
-        margin-left: 50%;
-        margin-top: 80px;
-    }
 }
 
 @media (min-width: 968px) {
-    .aboutContent {
-        padding-right: 35vw;
-    }
-
     .aboutTitle {
         font-size: 3rem;
     }
 
     .aboutSubTitle {
         font-size: 1.2rem;
-    }
-
-    .aboutManImgWrapper {
-        opacity: 1;
-        margin-left: 70%;
     }
 }

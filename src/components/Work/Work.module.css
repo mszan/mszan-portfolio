@@ -1,6 +1,6 @@
 .workWrapper {
     min-height: 100vh;
-    background: linear-gradient(rgb(234, 239, 245), rgba(115, 149, 187, .36));
+    /*background: linear-gradient(rgb(234, 239, 245), rgba(115, 149, 187, .36));*/
     padding: 25px 25px 25px 5vw;
     display: flex;
     overflow-x: auto;
