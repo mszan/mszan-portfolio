@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     opacity: .2;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
 }
 
 .decorBlocksWrapper {
@@ -36,7 +36,7 @@
 .decorPathWrapper .decorPathCyanOne {
     stroke-dashoffset: 700;
     stroke-dasharray: 2000;
-    animation: drawPathCyanOne 2s;
+    animation: drawPathCyanOne 500ms;
     animation-delay: 835ms;
     animation-fill-mode: backwards;
     transform: translate(55vw, 65vh) rotate(-55deg);
@@ -56,7 +56,7 @@
 .decorPathWrapper .decorPathCyanTwo {
     stroke-dashoffset: 700;
     stroke-dasharray: 2000;
-    animation: drawPathCyanTwo 2s;
+    animation: drawPathCyanTwo 500ms;
     animation-delay: 450ms;
     animation-fill-mode: backwards;
     transform: translate(35vw, 40vh);
@@ -76,7 +76,7 @@
 .decorPathWrapper .decorPathCyanThree {
     stroke-dashoffset: 700;
     stroke-dasharray: 2000;
-    animation: drawPathCyanThree 2s;
+    animation: drawPathCyanThree 500ms;
     animation-delay: 700ms;
     animation-fill-mode: backwards;
     transform: translate(35vw, -20vh) rotate(4deg);
