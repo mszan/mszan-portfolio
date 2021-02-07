@@ -1,5 +1,6 @@
 import React from "react"
 import decorClasses from "./Decor.module.css"
+import {motion} from "framer-motion";
 
 
 export class Decor extends React.Component {
@@ -9,6 +10,118 @@ export class Decor extends React.Component {
     }
 
     render() {
+        const decorBlocks = [
+            //big blue block
+            {
+                color: "blue",
+                rotation: 52,
+                styles: {
+                    top: "17vh",
+                    background: "#0270D7",
+                    opacity: ".5",
+                    width: "450px",
+                    height: "450px",
+                    marginLeft: "15vw",
+                    marginTop: "5vh"
+                },
+            },
+
+            //small cyan block
+            {
+                color: "blue",
+                rotation: -30,
+                styles: {
+                    top: "25vh",
+                    background: "#00BFFB",
+                    width: "20px",
+                    height: "20px",
+                    opacity: "0.3"
+                }
+            },
+
+
+
+            //medium cyan block
+            {
+                color: "blue",
+                rotation: -60,
+                styles: {
+                    top: "15vh",
+                    background: "#00BFFB",
+                    width: "40px",
+                    height: "40px",
+                    marginLeft: "15vw",
+                }
+            },
+
+
+            //big cyan block
+            {
+                color: "blue",
+                rotation: -8,
+                styles: {
+                    top: "60vh",
+                    // opacity: ".5",
+                    background: "#00BFFB",
+                    width: "150px",
+                    height: "150px",
+                    marginLeft: "10vw"
+                }
+            },
+
+            //big dark block
+            {
+                color: "dark",
+                rotation: 0,
+                styles: {
+                    top: "35vh",
+                    width: "400px",
+                    height: "300px",
+                    // transform: "perspective(500px) rotateY(-15deg) rotateX(8deg) rotateZ(-1deg)",
+                }
+            },
+
+            //medium dark block
+            {
+                color: "dark",
+                rotation: 10,
+                styles: {
+                    top: "30vh",
+                    width: "200px",
+                    height: "200px",
+                    marginLeft: "20vw",
+                    // transform: "translateX(20vw) rotateZ(10deg)"
+                }
+            },
+
+            //small dark block
+            {
+                color: "dark",
+                rotation: 20,
+                styles: {
+                    top: "40vh",
+                    width: "70px",
+                    height: "70px",
+                    marginLeft: "5vw",
+                    // transform: "translateX(-5vw) rotateZ(20deg)",
+                }
+            },
+
+            //small blue block
+            {
+                color: "blue",
+                rotation: -22,
+                styles: {
+                    top: "60vh",
+                    background: "#0270D7",
+                    width: "100px",
+                    height: "100px",
+                    marginLeft: "2vw"
+                    // transform: "translateX(-2vw) rotateZ(-22deg)",
+                }
+            }
+        ]
+
         return (
             <div className={decorClasses.decorWrapper}>
                 <div className={decorClasses.decorPathWrapper}>
@@ -50,77 +163,25 @@ export class Decor extends React.Component {
                 </div>
 
                 <div className={decorClasses.decorBlocksWrapper}>
-                    {/*big blue block*/}
-                    <div className={decorClasses.decorBlockGradient} style={{
-                        top: "17vh",
-                        transform: "translateX(15vw) rotateZ(52deg)",
-                        background: "#0270D7",
-                        opacity: ".5",
-                        width: "450px",
-                        height: "450px"
-                    }}/>
-
-                    {/*small cyan block*/}
-                    <div className={decorClasses.decorBlockGradient} style={{
-                        top: "25vh",
-                        transform: "rotateZ(-30deg)",
-                        background: "#00BFFB",
-                        width: "20px",
-                        height: "20px",
-                        opacity: "0.3"
-                    }}/>
-
-                    {/*medium cyan block*/}
-                    <div className={decorClasses.decorBlockGradient} style={{
-                        top: "15vh",
-                        transform: "translateX(15vw) rotateZ(-60deg)",
-                        background: "#00BFFB",
-                        width: "40px",
-                        height: "40px"
-                    }}/>
-
-                    {/*big cyan block*/}
-                    <div className={decorClasses.decorBlockGradient} style={{
-                        top: "60vh",
-                        transform: "translateX(10vw) rotateZ(-8deg)",
-                        // opacity: ".5",
-                        background: "#00BFFB",
-                        width: "150px",
-                        height: "150px"
-                    }}/>
-
-                    {/*big dark block*/}
-                    <div className={decorClasses.decorBlockDark} style={{
-                        top: "35vh",
-                        transform: "perspective(500px) rotateY(-15deg) rotateX(8deg) rotateZ(-1deg)",
-                        width: "400px",
-                        height: "300px"
-                    }}/>
-
-                    {/*medium dark block*/}
-                    <div className={decorClasses.decorBlockDark} style={{
-                        top: "30vh",
-                        width: "200px",
-                        height: "200px",
-                        transform: "translateX(20vw) rotateZ(10deg)"
-                    }}/>
-
-                    {/*small dark block*/}
-                    <div className={decorClasses.decorBlockDark} style={{
-                        top: "40vh",
-                        width: "70px",
-                        height: "70px",
-                        transform: "translateX(-5vw) rotateZ(20deg)",
-                    }}/>
-
-                    {/*small blue block*/}
-                    <div className={decorClasses.decorBlockGradient} style={{
-                        top: "60vh",
-                        transform: "translateX(-2vw) rotateZ(-22deg)",
-                        background: "#0270D7",
-                        width: "100px",
-                        height: "100px"
-                    }}/>
+                    {decorBlocks.map((item, itemIndex) => (
+                        <motion.div
+                            animate={{
+                                scale: [1, 1.2],
+                                rotate: [0, item.rotation],
+                            }}
+                            transition={{
+                                duration: 0.3,
+                                ease: "easeInOut",
+                                times: [0, 1],
+                                // loop: Infinity,
+                                repeatDelay: 1
+                            }}
+                            key={itemIndex}
+                            style={{...item.styles}}
+                            className={item.color === "blue" ? decorClasses.decorBlockGradient : decorClasses.decorBlockDark}
+                        >
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         );
