@@ -1,5 +1,5 @@
 .sidebarOverlay {
-    background: linear-gradient(to right, #1D2026, rgba(29,32,38,.25));
+    background: linear-gradient(to right, rgba(29, 32, 38, .8), rgba(29, 32, 38, .8));
     /* // must be gradient to override react-sidebar style */
 }
 

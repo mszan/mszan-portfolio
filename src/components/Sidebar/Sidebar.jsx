@@ -53,6 +53,13 @@ export class Sider extends React.Component {
             >
                 <div
                     onClick={() => {this.onSetSidebarOpen(!this.state.sidebarOpen)}}
+                    style={{
+                        zIndex: 100,
+                        width: 90,
+                        height: 80,
+                        position: "fixed",
+                        cursor: "pointer"
+                    }}
                 >
                     <Hamburger open={this.state.sidebarOpen}/>
                 </div>
