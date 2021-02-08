@@ -24,12 +24,13 @@
     list-style-type: none;
 }
 
-.sidebarUl a {
+.sidebarUl p {
     text-decoration: none;
     color: #fff!important;
     font-size: 28px;
     font-weight: lighter;
     line-height: 50px;
+    cursor: pointer;
 }
 
 .sidebarSocialsWrapper {

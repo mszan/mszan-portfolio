@@ -10,39 +10,43 @@ export class Sider extends React.Component {
         super(props);
         this.state = {
             sidebarOpen: false
-
         };
         this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
 
     onSetSidebarOpen(open) {
-        this.setState({ sidebarOpen: open });
+        this.setState({sidebarOpen: open});
     }
 
     render() {
+        // Sider menu items.
+        const menuItems = [
+            {anchor: "home", name: "Home"},
+            {anchor: "about", name: "About me"},
+            {anchor: "work", name: "My work"},
+            {anchor: "contact", name: "Contact form"},
+        ]
+
         return (
             <Sidebar
                 sidebar={
                     <React.Fragment>
-                            <ul className="sidebarUl">
-                                <hr width={70} /> {/* Home link width. */}
+                        <ul className="sidebarUl">
+                            <hr width={70}/>
+                            {/* First link width. */}
+                            {menuItems.map(item => (
                                 <li>
-                                    <a href="#">Home</a>
+                                    <p onClick={() => {
+                                        document.querySelector('#' + item.anchor).scrollIntoView() // Scroll to given anchor.
+                                        this.onSetSidebarOpen(!this.state.sidebarOpen)
+                                    }}>{item.name}</p>
                                 </li>
-                                <li>
-                                    <a href="#">About me</a>
-                                </li>
-                                <li>
-                                    <a href="#">My work</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact form</a>
-                                </li>
-                            </ul>
-                            <div className="sidebarSocialsWrapper">
-                                <a href="#"><img src={gitHubLogo} alt="" /></a>
-                                <a href="#"><img src={linkedInLogo} alt="" /></a>
-                            </div>
+                            ))}
+                        </ul>
+                        <div className="sidebarSocialsWrapper">
+                            <a href="https://github.com/mszan"><img src={gitHubLogo} alt=""/></a>
+                            <a href="https://www.linkedin.com/in/dawid-mszanowski"><img src={linkedInLogo} alt=""/></a>
+                        </div>
                     </React.Fragment>
                 }
                 open={this.state.sidebarOpen}
@@ -52,7 +56,9 @@ export class Sider extends React.Component {
                 sidebarClassName="sidebarContent"
             >
                 <div
-                    onClick={() => {this.onSetSidebarOpen(!this.state.sidebarOpen)}}
+                    onClick={() => {
+                        this.onSetSidebarOpen(!this.state.sidebarOpen)
+                    }}
                     style={{
                         zIndex: 100,
                         width: 90,
