@@ -14,7 +14,7 @@ export class Decor extends React.Component {
             //big blue block
             {
                 color: "blue",
-                rotation: 52,
+                rotateZ: 52,
                 styles: {
                     top: "17vh",
                     background: "#0270D7",
@@ -29,7 +29,7 @@ export class Decor extends React.Component {
             //small cyan block
             {
                 color: "blue",
-                rotation: -30,
+                rotateZ: -30,
                 styles: {
                     top: "25vh",
                     background: "#00BFFB",
@@ -44,7 +44,7 @@ export class Decor extends React.Component {
             //medium cyan block
             {
                 color: "blue",
-                rotation: -60,
+                rotateZ: -60,
                 styles: {
                     top: "15vh",
                     background: "#00BFFB",
@@ -58,7 +58,7 @@ export class Decor extends React.Component {
             //big cyan block
             {
                 color: "blue",
-                rotation: -8,
+                rotateZ: -8,
                 styles: {
                     top: "60vh",
                     // opacity: ".5",
@@ -72,7 +72,10 @@ export class Decor extends React.Component {
             //big dark block
             {
                 color: "dark",
-                rotation: 0,
+                rotateZ: -1,
+                rotateY: -15,
+                rotateX: 8,
+                perspective: 500,
                 styles: {
                     top: "35vh",
                     width: "400px",
@@ -84,47 +87,44 @@ export class Decor extends React.Component {
             //medium dark block
             {
                 color: "dark",
-                rotation: 10,
+                rotateZ: 10,
                 styles: {
                     top: "30vh",
                     width: "200px",
                     height: "200px",
                     marginLeft: "20vw",
-                    // transform: "translateX(20vw) rotateZ(10deg)"
                 }
             },
 
             //small dark block
             {
                 color: "dark",
-                rotation: 20,
+                rotateZ: 20,
                 styles: {
                     top: "40vh",
                     width: "70px",
                     height: "70px",
-                    marginLeft: "5vw",
-                    // transform: "translateX(-5vw) rotateZ(20deg)",
+                    marginLeft: "-5vw",
                 }
             },
 
             //small blue block
             {
                 color: "blue",
-                rotation: -22,
+                rotateZ: -22,
                 styles: {
                     top: "60vh",
                     background: "#0270D7",
                     width: "100px",
                     height: "100px",
                     marginLeft: "2vw"
-                    // transform: "translateX(-2vw) rotateZ(-22deg)",
                 }
             }
         ]
 
         return (
             <div className={decorClasses.decorWrapper}>
-                <div className={decorClasses.decorPathWrapper}>
+                <motion.div className={decorClasses.decorPathWrapper}>
                     <svg width="2000" height="2000"
                          xmlns="http://www.w3.org/2000/svg">
                         <defs>
@@ -160,21 +160,30 @@ export class Decor extends React.Component {
                             />
                         </g>
                     </svg>
-                </div>
+                </motion.div>
 
                 <div className={decorClasses.decorBlocksWrapper}>
                     {decorBlocks.map((item, itemIndex) => (
                         <motion.div
+                            whileHover={{
+                                rotate: Math.floor(Math.random() * (Math.floor(20) - Math.ceil(5))) + Math.ceil(5),
+                                transition: { type: "spring", stiffness: 700, duration: 0.5 },
+                            }}
+                            whileTap={{
+                                rotate: Math.floor(Math.random() * (Math.floor(90) - Math.ceil(45))) + Math.ceil(45),
+                                transition: { duration: 0.5 },
+                            }}
                             animate={{
-                                scale: [1, 1.2],
-                                rotate: [0, item.rotation],
+                                opacity: [0, 1],
+                                rotateZ: [0, item.rotateZ ? item.rotateZ : 0],
+                                rotateY: [0, item.rotateY ? item.rotateY : 0],
+                                rotateX: [0, item.rotateX ? item.rotateX : 0],
+                                transformPerspective: [null, item.perspective ? item.perspective : null]
                             }}
                             transition={{
-                                duration: 0.3,
-                                ease: "easeInOut",
-                                times: [0, 1],
-                                // loop: Infinity,
-                                repeatDelay: 1
+                                duration: .7,
+                                type: "spring",
+                                stiffness: 500
                             }}
                             key={itemIndex}
                             style={{...item.styles}}

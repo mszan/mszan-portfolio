@@ -6,9 +6,9 @@
 
 .homeBg {
     background-color: #202228;
-    width: 150vw;
+    width: 200vw;
     height: 150vh;
-    transform: rotateZ(-10deg) translate(-50vw, -100vh);
+    transform: rotateZ(-10deg) translate(-50vw, -105vh);
     box-shadow: none!important;
 }
 

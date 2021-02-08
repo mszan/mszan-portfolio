@@ -18,6 +18,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+::selection {
+  background: #0270d7 !important;
+  color: #1D2026 !important;
+}
+
+::-moz-selection {
+  background: #0270d7 !important;
+  color: #1D2026 !important;
+}
 
 /*
 very light (thin) hr
