@@ -1,5 +1,5 @@
 .contactWrapper {
-    scroll-snap-align: start!important;
+    scroll-snap-align: start;
     position: relative;
     min-height: 90vh;
     /*background: linear-gradient(rgba(115, 149, 187, .36), rgba(131, 120, 98, .25));*/

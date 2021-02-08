@@ -1,10 +1,6 @@
 .aboutWrapper {
     position: relative;
     min-height: 100vh;
-    /*background: linear-gradient(0deg, rgba(234,239,245,1) 0%, rgb(158, 171, 196) 94%, rgba(255,255,255, 0) 100%);*/
-    margin-top: -10vh;
-    /*bottom: 0;*/
-    /*margin-top: -10vh!important;*/
 }
 
 .aboutSubTitle {
@@ -12,7 +8,7 @@
 }
 
 .aboutContent {
-    scroll-snap-align: start!important;
+    scroll-snap-align: start;
     position: relative;
     top: 60px;
     padding: 40px 10vw 120px 10vw;

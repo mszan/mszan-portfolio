@@ -6,5 +6,5 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* smooth scroll on safari */
     scroll-snap-type: x mandatory; /* snap points */
-    scroll-snap-align: start!important;
+    scroll-snap-align: start;
 }
