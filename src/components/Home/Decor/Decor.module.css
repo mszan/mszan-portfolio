@@ -19,7 +19,7 @@
 
 .decorPathWrapper {
     /*position: relative;*/
-    /*height: 100vh;*/
+    height: 100vh;
 }
 
 @keyframes drawPathCyanOne {
@@ -99,10 +99,6 @@
     width: 150vw;
     height: 150vh;
     transform: rotateZ(-10deg) translate(-50vw, -100vh);
-}
-
-.decorBlockDark {
-    background-color: #242830;
 }
 
 .decorBlockGradient {
