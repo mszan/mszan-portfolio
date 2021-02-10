@@ -13,17 +13,24 @@ export class Contact extends React.Component {
             <React.Fragment>
                 <div className={contactClasses.contactWrapper}>
                     <div className={contactClasses.contactForm}>
-                        <input type="text" placeholder="Name" />
-                        <input type="text" placeholder="Email" />
-                        <textarea rows={3} placeholder="Message" />
-                        <motion.button
-                            onClick={() => console.log("will be sending smth")}
-                            className="btnLight"
-                            whileHover={{
-                                letterSpacing: 30,
-                                transition: { type: "spring", stiffness: 700, duration: 0.5 }
-                            }}
-                        >SEND</motion.button>
+                        <div className={contactClasses.contactFormBg}>
+                            <div/>
+                            <div/>
+                        </div>
+                        <div className={contactClasses.contactFormInner}>
+                            <input type="text" placeholder="Name" />
+                            <div className={contactClasses.contactFormInputBorder}/>
+                            <input type="text" placeholder="Email" />
+                            <div className={contactClasses.contactFormInputBorder}/>
+                            <textarea rows={3} placeholder="Message" />
+                            <div className={contactClasses.contactFormInputBorder}
+                                 style={{top: -20}} // because textarea bottom-margin seems to be buggy
+                            />
+                            <button
+                                onClick={() => console.log("will be sending smth")}
+                                className="btnLight"
+                            >SEND</button>
+                        </div>
                     </div>
                     <div className={contactClasses.footerWrapper}>
                         <span>
@@ -33,7 +40,6 @@ export class Contact extends React.Component {
                     </div>
                 </div>
             </React.Fragment>
-
         );
     }
 }
