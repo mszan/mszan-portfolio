@@ -137,16 +137,6 @@ textarea:focus .contactFormInputBorder {
     background-color: #373b47;
 }
 
-.footerWrapper {
-    /*padding: 50px 0;*/
-    position: absolute;
-    width: 100%;
-    bottom: 25px;
-    left: 0;
-    text-align: center;
-    color: #7d96b1;
-}
-
 /*@media (min-width: 480px) {*/
 /*    */
 /*}*/

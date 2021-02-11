@@ -34,8 +34,7 @@ export class Contact extends React.Component {
                     </div>
                     <div className={contactClasses.footerWrapper}>
                         <span>
-                            2020 &copy; Dawid Mszanowski.<br />
-                            All Rights Reserved.
+                            2020 &copy; Dawid Mszanowski
                         </span>
                     </div>
                 </div>

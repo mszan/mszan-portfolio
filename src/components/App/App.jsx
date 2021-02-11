@@ -4,6 +4,54 @@ import {Contact} from "../Contact/Contact";
 import {Sider} from "../Sidebar/Sidebar";
 import {About} from "../About/About";
 import {Helmet} from "react-helmet";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import {Footer} from "../Footer/Footer";
+
+function FadeInWhenVisible({ children }) {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({
+        rootMargin: "-25%"
+    });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start('visible');
+            console.log(inView)
+        }
+    }, [controls, inView]);
+
+    const animationVariants = {
+        hidden: {
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                delay: .1,
+                duration: .3,
+                type: "spring",
+                stiffness: 100,
+            }
+        }
+    }
+
+    return (
+        <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={animationVariants}
+            style={{
+                opacity: 0,
+                x: "10vw"
+            }}
+        >
+            {children}
+        </motion.div>
+    );
+}
 
 function App() {
     return (
@@ -27,9 +75,16 @@ function App() {
             </Helmet>
             <Sider />
             <Home />
-            <About />
-            <Work />
-            <Contact />
+            <FadeInWhenVisible>
+                <About />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
+                <Work />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
+                <Contact />
+            </FadeInWhenVisible>
+            <Footer />
         </div>
     );
 }
