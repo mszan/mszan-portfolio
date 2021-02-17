@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 html {
-  scroll-snap-type: y mandatory;
-  -webkit-scroll-snap-type: y mandatory;
-  scroll-behavior: smooth !important;
+  /*scroll-snap-type: y mandatory;*/
+  /*-webkit-scroll-snap-type: y mandatory;*/
+  /*scroll-behavior: smooth !important; !* for sidebar section links *!*/
 }
 
 body {
@@ -84,4 +84,6 @@ button:focus {
 /**/
 
 .container {
+  position: relative;
+  overflow-x: hidden;
 }

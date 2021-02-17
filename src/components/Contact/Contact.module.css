@@ -1,7 +1,7 @@
 .contactWrapper {
     scroll-snap-align: start;
     position: relative;
-    min-height: 90vh;
+    min-height: 80vh;
     /*background: linear-gradient(rgba(115, 149, 187, .36), rgba(131, 120, 98, .25));*/
     padding: 25px 25px 25px 5vw;
 }
@@ -144,6 +144,7 @@ textarea:focus .contactFormInputBorder {
 @media (min-width: 968px) {
     .contactWrapper {
         padding: 25px 30% 25px 30%;
+        min-height: 70vh;
     }
 }
 

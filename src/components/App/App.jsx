@@ -18,7 +18,6 @@ function FadeInWhenVisible({ children }) {
     useEffect(() => {
         if (inView) {
             controls.start('visible');
-            console.log(inView)
         }
     }, [controls, inView]);
 

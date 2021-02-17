@@ -1,6 +1,6 @@
 .hamburger {
     z-index: 100;
-    margin: 25px;
+    margin: 17px;
     width: 40px;
     height: 40px;
     /*position: fixed;*/
@@ -42,6 +42,10 @@
 
 .hamburger span:nth-child(4) {
     top: 24px;
+}
+
+.hamburger.open {
+    margin: 25px 0 0 25px;
 }
 
 .hamburger.open span {

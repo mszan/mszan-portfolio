@@ -2,14 +2,11 @@ import React from "react";
 import homeBtnsClasses from "./Btns.module.css"
 import {motion} from "framer-motion"
 
-export function Btns(props) {
+export const Btns = () => {
     return (
         <motion.div
             className={homeBtnsClasses.homeBtnsWrapper}
-            animate={{
-                // x: ["-10vw", "0vw"],
-                opacity: [0, 0, 1]
-            }}
+            animate={{opacity: [0, 0, 1]}}
             transition={{
                 type: "spring",
                 stiffness: 100,

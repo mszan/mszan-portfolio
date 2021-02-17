@@ -1,6 +1,6 @@
 .aboutWrapper {
     position: relative;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 .aboutSubTitle {
@@ -10,8 +10,7 @@
 .aboutContent {
     scroll-snap-align: start;
     position: relative;
-    top: 60px;
-    padding: 40px 10vw 120px 10vw;
+    padding: 0 10vw 0 10vw;
     text-shadow: 0 3px 15px rgba(33, 38, 27, .20);
 }
 
@@ -22,11 +21,9 @@
 
 .aboutContent p span {
     font-weight: normal;
-    /*margin-right: 50%;*/
 }
 
 .aboutSocial {
-    /*margin-top: 125px;*/
     color: #fff;
     bottom: 5vh;
 }
@@ -41,6 +38,7 @@
     font-weight: normal;
     font-size: 2rem;
     margin-bottom: 35px;
+    margin-top: 0;
     color: #FFFFFF;
 }
 
@@ -54,5 +52,9 @@
 
     .aboutSubTitle {
         font-size: 1.2rem;
+    }
+
+    .aboutContent {
+        padding-bottom: 10vh;
     }
 }
