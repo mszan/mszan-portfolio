@@ -87,3 +87,12 @@ button:focus {
   position: relative;
   overflow-x: hidden;
 }
+
+svg {
+  fill: #fff;
+  transition: fill 100ms ease-in-out;
+}
+
+svg:hover {
+  fill: #3889F1;
+}

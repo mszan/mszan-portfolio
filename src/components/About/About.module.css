@@ -28,9 +28,9 @@
     bottom: 5vh;
 }
 
-.aboutSocial img {
-    height: 35px;
-    margin-right: 4px;
+.aboutSocial svg {
+    /*height: 35px;*/
+    margin-right: 12px;
     /*margin-bottom: 15px;*/
 }
 

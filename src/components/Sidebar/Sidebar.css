@@ -25,12 +25,19 @@
 }
 
 .sidebarUl p {
+    transition: color 100ms ease-in-out;
     text-decoration: none;
     color: #fff!important;
     font-size: 28px;
     font-weight: lighter;
     line-height: 50px;
     cursor: pointer;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+.sidebarUl p:hover {
+    color: #3889F1!important;
 }
 
 .sidebarSocialsWrapper {
@@ -40,10 +47,22 @@
     /*bottom: 30px!important;*/
 }
 
-.sidebarSocialsWrapper img:first-of-type {
+.sidebarSocialsWrapper svg:first-of-type {
     margin-right: 10%;
 }
 
-.sidebarSocialsWrapper img {
+.sidebarSocialsWrapper svg {
     width: 2.5rem;
+}
+
+.hamburgerWrapper {
+    z-index: 100;
+    width: 90px;
+    height: 80px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.hamburgerWrapper:hover span {
+    background-color: #3889F1!important;
 }

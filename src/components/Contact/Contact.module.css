@@ -87,7 +87,7 @@
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 15px;
-    transition: background-color 300ms;
+    transition: background-color 100ms;
 }
 
 .contactFormInputBorder {
