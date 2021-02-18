@@ -1,5 +1,6 @@
 .sidebarOverlay {
     background: linear-gradient(to right, rgba(29, 32, 38, .8), rgba(29, 32, 38, .8));
+    z-index: 25!important;
     /* // must be gradient to override react-sidebar style */
 }
 
@@ -15,6 +16,7 @@
 }
 
 .sidebarContent {
+    z-index: 26!important;
     position: fixed!important;
     top: 70px!important;
     left: -10px!important;

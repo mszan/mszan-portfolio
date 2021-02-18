@@ -3,7 +3,7 @@
 html {
   /*scroll-snap-type: y mandatory;*/
   /*-webkit-scroll-snap-type: y mandatory;*/
-  /*scroll-behavior: smooth !important; !* for sidebar section links *!*/
+  scroll-behavior: smooth !important; /* for sidebar section links */
 }
 
 body {

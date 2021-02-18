@@ -1,10 +1,14 @@
 import React from "react"
 import contactClasses from "./Contact.module.css"
+import {motion} from "framer-motion";
 
-export function Contact() {
+export const Contact = () => {
     return (
         <React.Fragment>
-            <div id="contact" className={contactClasses.contactWrapper}>
+            <motion.div
+                id="contact"
+                className={contactClasses.contactWrapper}
+            >
                 <div className={contactClasses.contactForm}>
                     <div className={contactClasses.contactFormBg}>
                         <div/>
@@ -31,7 +35,7 @@ export function Contact() {
                             2020 &copy; Dawid Mszanowski
                         </span>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     );
 }

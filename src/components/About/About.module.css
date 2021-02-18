@@ -1,5 +1,8 @@
 .aboutWrapper {
     position: relative;
+    top: -40vh;
+    padding-top: 40vh;
+    z-index: 0;
     /*min-height: 100vh;*/
 }
 

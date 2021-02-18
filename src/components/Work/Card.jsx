@@ -11,12 +11,19 @@ export class Card extends React.Component {
     render() {
         return (
             <div className={cardClasses.cardWrapper}>
-                <div className={cardClasses.cardThumbnail} style={{backgroundImage: `url(${this.props.thumbnail})`}}>
+                <div className={cardClasses.cardBg}>
+                    <div/>
+                    <div/>
                 </div>
+                <div
+                    className={cardClasses.cardThumbnail}
+                    style={{backgroundImage: `url(${this.props.thumbnail})`}}
+                    onClick={() => window.open(this.props.repoUrl, '_blank')}
+                />
                 <div className={cardClasses.cardBottom}>
                     <div className={cardClasses.cardText}>
                         <h4>{this.props.title}</h4>
-                        <p>{this.props.description}</p>
+                        {this.props.description}
                     </div>
                 </div>
                 <div className={cardClasses.cardBtnsWrapper}>

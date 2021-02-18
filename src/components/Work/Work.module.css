@@ -1,5 +1,6 @@
 .workWrapper {
-    padding: 0 10vw 10vh 5vw;
+    margin-top: -40vh;
+    padding: 0 10vw 10vh 25vw;
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* smooth scroll on safari */

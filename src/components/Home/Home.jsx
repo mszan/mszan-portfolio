@@ -7,6 +7,7 @@ import {motion, useTransform, useViewportScroll} from "framer-motion";
 export function Home() {
     const { scrollY } = useViewportScroll()
     const y1 = useTransform(scrollY, [0, 600], [600, 800])
+    const y2 = useTransform(scrollY, [0, 600], [0, -400])
 
     return (
         <div id="home" className={homeClasses.homeWrapper}>
@@ -22,15 +23,16 @@ export function Home() {
                     stiffness: 100,
                     duration: 1,
                 }}
-                style={{
-                    y: y1
-                }}
+                style={{y: y1}}
             />
 
             {/*background decoration*/}
             <Decor/>
 
-            <div className={homeClasses.titleWrapper}>
+            <motion.div
+                style={{y: y2}}
+                className={homeClasses.titleWrapper}
+            >
                 <motion.div
                     style={{
                         fontWeight: "lighter",
@@ -90,7 +92,7 @@ export function Home() {
                     </p>
                 </motion.div>
                 <Btns/>
-            </div>
+            </motion.div>
         </div>
     );
 }

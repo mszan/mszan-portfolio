@@ -44,7 +44,7 @@ function FadeInWhenVisible({ children }) {
             variants={animationVariants}
             style={{
                 opacity: 0,
-                x: "10vw"
+                x: "-10vw"
             }}
         >
             {children}
@@ -75,7 +75,7 @@ function App() {
             <Sider />
             <Home />
             <FadeInWhenVisible>
-                <About />
+                <About/>
             </FadeInWhenVisible>
             <FadeInWhenVisible>
                 <Work />
