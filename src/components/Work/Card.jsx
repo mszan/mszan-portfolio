@@ -49,6 +49,13 @@ export const Card = (props) => {
             <div className={cardClasses.cardBottom}>
                 <div className={cardClasses.cardText}>
                     <h4>{props.title}</h4>
+                    {props.icons.map((icon) => (
+                        <img
+                            src={icon}
+                            alt={icon}
+                            className={cardClasses.cardIcon}
+                        />
+                    ))}
                     {props.description}
                 </div>
             </div>

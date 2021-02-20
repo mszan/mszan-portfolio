@@ -66,7 +66,12 @@
     color: #FFF!important;
     font-size: 1.5rem;
     font-weight: normal!important;
-    margin: 0;
+    margin: 0 .5rem 0 0;
+}
+
+.cardIcon {
+    width: 1.5rem;
+    margin-right: .5rem;
 }
 
 .cardBg {
@@ -111,6 +116,10 @@
     transform: rotateZ(-50deg);
 }
 
+.cardText p {
+    width: 100%;
+}
+
 @media (min-width: 968px) {
     .cardWrapper {
         padding: 40px;
@@ -134,7 +143,7 @@
     }
 
     .cardText h4 {
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .cardBtnsWrapper {

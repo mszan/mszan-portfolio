@@ -1,11 +1,17 @@
 import React from "react";
 import workClasses from "./Work.module.css"
 import {Card} from "./Card";
-import todos from "./img/todos.png"
-import gerd from "./img/gerd.png"
-import architect from "./img/architect.png"
-import sampleportfolio from "./img/sampleportfolio.png"
-import sellit from "./img/sellit.png"
+import thumbnailTodos from "./thumbnails/todos.png"
+import thumbnailGerd from "./thumbnails/gerd.png"
+import thumbnailArchitect from "./thumbnails/architect.png"
+import thumbnailSampleportfolio from "./thumbnails/sampleportfolio.png"
+import thumbnailSellit from "./thumbnails/sellit.png"
+import iconReact from "./icons/react.svg"
+import iconNodeJS from "./icons/node-dot-js.svg"
+import iconDjango from "./icons/django.svg"
+import iconHTML from "./icons/html5.svg"
+import iconCSS from "./icons/css3.svg"
+import iconJS from "./icons/javascript.svg"
 
 export const Work = () => {
         return (
@@ -17,41 +23,46 @@ export const Work = () => {
                 id="1"
                 title="Todos"
                 description={<p>A web app built that allows users to add, modify and delete tasks. Backend uses <b>ExpressJS</b> along with <b>MySQL</b> and <b>JWT</b>. Frontend uses <b>ReactJS</b> along with <b>Ant Design</b> and <b>Ant Motion.</b></p>}
-                thumbnail={todos}
+                thumbnail={thumbnailTodos}
                 repoUrl="https://github.com/mszan/todos"
                 demoUrl="https://todos.mszanowski.pl/"
+                icons={[iconReact, iconNodeJS]}
             />
             <Card
                 id="2"
                 title="Photographer portfolio"
                 description={<p>A web web app built for a photographer built with <b>Django</b> (both backend and frontend). It allows users to view photo galleries managed by the photographer.</p>}
-                thumbnail={gerd}
+                thumbnail={thumbnailGerd}
                 repoUrl="https://github.com/mszan/photographer_portfolio"
                 demoUrl="https://gerd.mszanowski.pl/"
+                icons={[iconDjango]}
             />
             <Card
                 id="3"
                 title="Architect portfolio"
                 description={<p>Simple architect portfolio built with <b>React.</b></p>}
-                thumbnail={architect}
+                thumbnail={thumbnailArchitect}
                 repoUrl="https://github.com/mszan/architect_portfolio"
                 demoUrl="https://github.com/mszan/architect_portfolio/deployments/activity_log?environment=github-pages"
+                icons={[iconReact]}
             />
             <Card
                 id="4"
                 title="Sample portfolio"
                 description={<p>A simple fully-responsive portfolio website built with <b>pure HTML, CSS and JS</b> (with an exception for a small jQuery snippet).</p>}
-                thumbnail={sampleportfolio}
+                thumbnail={thumbnailSampleportfolio}
                 repoUrl="https://github.com/mszan/ethworks_portfolio"
                 demoUrl="https://ethworks.mszanowski.pl/"
+                icons={[iconHTML, iconCSS, iconJS]}
             />
             <Card
                 id="5"
                 title="Sell it!"
                 description={<p>An online marketplace web application built with <b>Django</b> (both backend and frontend) that handles offers announcements displaying and allows their management.</p>}
-                thumbnail={sellit}
+                thumbnail={thumbnailSellit}
                 repoUrl="https://github.com/mszan/sell_it"
                 demoUrl="https://sell-it.mszanowski.pl/"
+                icons={[iconDjango]}
             />
             <div style={{width: "3vw"}}>&nbsp;</div>
         </div>
