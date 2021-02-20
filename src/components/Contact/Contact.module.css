@@ -71,6 +71,13 @@
 .contactFormInner button:hover {
     background-color: #00bffb;
 }
+.contactFormInner button:disabled {
+    cursor: not-allowed;
+}
+
+.contactFormInner button:disabled:hover {
+    background-color: #3889F1;
+}
 
 .contactFormInner input,
 .contactFormInner textarea {
@@ -90,10 +97,15 @@
     transition: background-color 100ms;
 }
 
+.contactFormInner input:disabled,
+.contactFormInner textarea:disabled {
+    cursor: not-allowed;
+}
+
 .contactFormInputBorder {
     display: block;
     position: relative;
-    height: 3px;
+    height: 4px;
     top: -15px;
     width: 100%;
     background: #3889F1;
