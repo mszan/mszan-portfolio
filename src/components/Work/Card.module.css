@@ -7,11 +7,16 @@
     margin-top: 65px;
     flex-shrink: 0;
     scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /*scroll-snap-stop: always;*/
     scroll-behavior: smooth;
     box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
     position: relative;
     overflow: hidden;
+    transition: opacity 300ms ease-in-out;
+}
+
+.cardWrapper:hover {
+    opacity: 1!important;
 }
 
 .cardThumbnail {

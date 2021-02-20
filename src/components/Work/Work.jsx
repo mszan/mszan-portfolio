@@ -8,12 +8,13 @@ import sampleportfolio from "./img/sampleportfolio.png"
 import sellit from "./img/sellit.png"
 
 export const Work = () => {
-    return (
+        return (
         <div
             id="work"
             className={workClasses.workWrapper}
         >
             <Card
+                id="1"
                 title="Todos"
                 description={<p>A web app built that allows users to add, modify and delete tasks. Backend uses <b>ExpressJS</b> along with <b>MySQL</b> and <b>JWT</b>. Frontend uses <b>ReactJS</b> along with <b>Ant Design</b> and <b>Ant Motion.</b></p>}
                 thumbnail={todos}
@@ -21,6 +22,7 @@ export const Work = () => {
                 demoUrl="https://todos.mszanowski.pl/"
             />
             <Card
+                id="2"
                 title="Photographer portfolio"
                 description={<p>A web web app built for a photographer built with <b>Django</b> (both backend and frontend). It allows users to view photo galleries managed by the photographer.</p>}
                 thumbnail={gerd}
@@ -28,6 +30,7 @@ export const Work = () => {
                 demoUrl="https://gerd.mszanowski.pl/"
             />
             <Card
+                id="3"
                 title="Architect portfolio"
                 description={<p>Simple architect portfolio built with <b>React.</b></p>}
                 thumbnail={architect}
@@ -35,6 +38,7 @@ export const Work = () => {
                 demoUrl="https://github.com/mszan/architect_portfolio/deployments/activity_log?environment=github-pages"
             />
             <Card
+                id="4"
                 title="Sample portfolio"
                 description={<p>A simple fully-responsive portfolio website built with <b>pure HTML, CSS and JS</b> (with an exception for a small jQuery snippet).</p>}
                 thumbnail={sampleportfolio}
@@ -42,6 +46,7 @@ export const Work = () => {
                 demoUrl="https://ethworks.mszanowski.pl/"
             />
             <Card
+                id="5"
                 title="Sell it!"
                 description={<p>An online marketplace web application built with <b>Django</b> (both backend and frontend) that handles offers announcements displaying and allows their management.</p>}
                 thumbnail={sellit}
