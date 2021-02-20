@@ -1,5 +1,6 @@
 import React from "react";
 import aboutClasses from "./About.module.css"
+
 export function About() {
     return (
         <div id="about" className={aboutClasses.aboutWrapper}>

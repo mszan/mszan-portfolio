@@ -3,7 +3,7 @@
     position: relative;
     min-height: 80vh;
     /*background: linear-gradient(rgba(115, 149, 187, .36), rgba(131, 120, 98, .25));*/
-    padding: 25px 25px 25px 5vw;
+    padding: 25px 25px 75px 25px;
 }
 
 .contactForm {

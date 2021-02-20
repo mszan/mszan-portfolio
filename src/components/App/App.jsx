@@ -4,9 +4,9 @@ import {Contact} from "../Contact/Contact";
 import {Sider} from "../Sidebar/Sidebar";
 import {About} from "../About/About";
 import {Helmet} from "react-helmet";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import {motion, useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import {useEffect} from "react";
 import {Footer} from "../Footer/Footer";
 
 function FadeInWhenVisible({ children }) {

@@ -30,7 +30,7 @@ export const Card = (props) => {
             ref={ref}
             style={{
                 opacity: wrapperOpacity,
-                cursor: wrapperCursor
+                cursor: wrapperCursor,
             }}
             className={cardClasses.cardWrapper}
             onClick={scrollToCard}

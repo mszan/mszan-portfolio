@@ -131,7 +131,7 @@ export class Contact extends React.Component {
                             />
 
                             <button
-                                style={this.state.emailSent ? {backgroundColor: "green"} : null}
+                                style={this.state.emailSent ? {backgroundColor: "#003a00"} : null}
                                 className="btnLight"
                                 disabled={this.state.formBtnDisabled}
                                 onClick={this.sendEmail}

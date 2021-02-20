@@ -30,7 +30,7 @@ export function Home() {
             <Decor/>
 
             <motion.div
-                style={{y: y2}}
+                style={{y: window.innerWidth > 968 ? y2 : 0 }}
                 className={homeClasses.titleWrapper}
             >
                 <motion.div

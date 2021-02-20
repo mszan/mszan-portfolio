@@ -68,7 +68,7 @@
     animation: drawPathCyanTwo 500ms;
     animation-delay: 1450ms;
     animation-fill-mode: backwards;
-    transform: translate(35vw, 40vh);
+    transform: translate(37vw, 40vh);
 }
 
 @keyframes drawPathCyanThree {
@@ -92,7 +92,7 @@
     animation: drawPathCyanThree 500ms;
     animation-delay: 1700ms;
     animation-fill-mode: backwards;
-    transform: translate(35vw, -20vh) rotate(4deg);
+    transform: translate(35vw, -18vh) rotate(4deg);
 }
 
 .decorBigBg {

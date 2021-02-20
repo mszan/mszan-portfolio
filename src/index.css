@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 html {
-  /*scroll-snap-type: y mandatory;*/
-  /*-webkit-scroll-snap-type: y mandatory;*/
-  scroll-behavior: smooth !important; /* for sidebar section links */
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -96,3 +94,18 @@ svg {
 svg:hover {
   fill: #3889F1;
 }
+
+/*@keyframes secondCardFlash {*/
+/*  0% {*/
+/*    opacity: .2;*/
+/*  }*/
+/*  20% {*/
+/*    opacity: .5;*/
+/*  }*/
+/*  40% {*/
+/*    opacity: .5;*/
+/*  }*/
+/*  100% {*/
+/*    opacity: .2;*/
+/*  }*/
+/*}*/
