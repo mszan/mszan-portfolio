@@ -14,24 +14,22 @@ export const Btns = () => {
                 delay: 2.7
             }}
         >
-            <a href="#about">
+            <a href="#work">
                 <motion.button
                     className="btnLight"
                     whileHover={{
                         scale: 0.9,
                         transition: { type: "spring", stiffness: 700, duration: 0.5 }
                     }}
-                    href="#about"
                 >MY WORK</motion.button>
             </a>
-            <a href="#work">
+            <a href="#about">
                 <motion.button
                     className="btnDark"
                     whileHover={{
                         scale: 0.9,
                         transition: { type: "spring", stiffness: 700, duration: 0.5 }
                     }}
-                    href="#work"
                 >ABOUT ME</motion.button>
             </a>
         </motion.div>
