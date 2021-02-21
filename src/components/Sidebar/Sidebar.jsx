@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "react-sidebar";
-import "./Sidebar.css"
 import Hamburger from "./Hamburger/Hamburger";
 
 export class Sider extends React.Component {
@@ -55,6 +54,7 @@ export class Sider extends React.Component {
                         </div>
                     </React.Fragment>
                 }
+                style={{overflowY: "visible"}}
                 open={this.state.sidebarOpen}
                 onSetOpen={this.onSetSidebarOpen}
                 shadow={false}
@@ -64,6 +64,8 @@ export class Sider extends React.Component {
                 <div
                     onClick={() => {
                         this.onSetSidebarOpen(!this.state.sidebarOpen)
+                        console.log('POS 66: ', this.state.sidebarOpen)
+                        console.log('POS 67: ', "click")
                     }}
                     className="hamburgerWrapper"
                 >

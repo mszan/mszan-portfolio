@@ -28,7 +28,8 @@ export class Contact extends React.Component {
      */
     didUserSendEmailLately = () => {
         // Check if user sent any message within last day.
-        const timeLastEmailSent = moment(localStorage.getItem("timeLastEmailSent"))
+        const timeLastEmailSent = moment(process.browser ? localStorage.getItem("timeLastEmailSent") : null)
+        console.log('POS 32: ', timeLastEmailSent)
         return timeLastEmailSent.add(1, "days").isAfter(moment())
     }
 
@@ -131,7 +132,6 @@ export class Contact extends React.Component {
                             />
 
                             <button
-                                style={this.state.emailSent ? {backgroundColor: "#003a00"} : null}
                                 className="btnLight"
                                 disabled={this.state.formBtnDisabled}
                                 onClick={this.sendEmail}

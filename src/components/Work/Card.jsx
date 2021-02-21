@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import cardClasses from "./Card.module.css"
 import {motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
+import Image from 'next/image'
 
 export const Card = (props) => {
     const [wrapperOpacity, setWrapperOpacity] = useState(1);
@@ -41,11 +42,17 @@ export const Card = (props) => {
             </div>
             <div
                 className={cardClasses.cardThumbnail}
-                style={{
-                    backgroundImage: `url(${props.thumbnail})`
-                }}
                 onClick={() => inView ? window.open(props.repoUrl, '_blank') : null}
-            />
+            >
+                <Image
+                    src={props.thumbnail}
+                    alt={props.title}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={100}
+                />
+            </div>
+
             <div className={cardClasses.cardBottom}>
                 <div className={cardClasses.cardText}>
                     <h4>{props.title}</h4>

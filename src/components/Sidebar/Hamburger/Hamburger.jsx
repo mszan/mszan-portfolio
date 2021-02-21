@@ -1,5 +1,4 @@
 import React from "react";
-import "./Hamburger.css";
 
 const Hamburger = (props) => {
     // const [prevScrollPos, setPrevScrollPos] = React.useState(0);

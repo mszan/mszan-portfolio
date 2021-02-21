@@ -4,6 +4,10 @@
     /* // must be gradient to override react-sidebar style */
 }
 
+.sidebarOverlay + div {
+    overflow-y: visible!important; /* hotfix for not opening hamburger in iOS Safari */
+}
+
 .sidebarOverlay::before {
     content: ' ';
     position: absolute;
