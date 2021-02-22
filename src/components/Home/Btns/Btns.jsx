@@ -1,11 +1,11 @@
 import React from "react";
-import homeBtnsClasses from "./Btns.module.css"
+import homeBtnsClasses from "./Btns.module.scss"
 import {motion} from "framer-motion"
 
 export const Btns = () => {
     return (
         <motion.div
-            className={homeBtnsClasses.homeBtnsWrapper}
+            className={homeBtnsClasses.wrapper}
             animate={{opacity: [0, 0, 1]}}
             transition={{
                 type: "spring",

@@ -1,5 +1,5 @@
 import React from "react";
-import homeClasses from "./Home.module.css"
+import homeClasses from "./Home.module.scss"
 import {Btns} from "./Btns/Btns"
 import {Decor} from "./Decor/Decor";
 import {motion, useTransform, useViewportScroll} from "framer-motion";
@@ -10,10 +10,10 @@ export function Home() {
     const y2 = useTransform(scrollY, [0, 600], [0, -400])
 
     return (
-        <div id="home" className={homeClasses.homeWrapper}>
+        <div id="home" className={homeClasses.wrapper}>
             {/*background second color*/}
             <motion.div
-                className={homeClasses.homeBg}
+                className={homeClasses.bg}
                 animate={{
                     x: "-50vw",
                     rotateZ: [0, -10]
@@ -31,7 +31,7 @@ export function Home() {
 
             <motion.div
                 style={{y: process.browser ? window.innerWidth > 968 ? y2 : 0 : 0}}
-                className={homeClasses.titleWrapper}
+                className={homeClasses.title}
             >
                 <motion.div
                     style={{

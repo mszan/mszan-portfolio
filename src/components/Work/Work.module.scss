@@ -1,4 +1,4 @@
-.workWrapper {
+.wrapper {
     padding: 0 10vw 10vh 10vw;
     display: flex;
     overflow-x: auto;
@@ -7,14 +7,10 @@
     scroll-snap-align: start;
     -ms-overflow-style: none;  /* IE and Edge */
     scroll-behavior: smooth;
-}
 
-.workWrapper::-webkit-scrollbar {
-    display: none;
+    &::-webkit-scrollbar {display: none;}
 }
 
 @media (min-width: 968px) {
-    .workWrapper {
-        margin-top: -40vh;
-    }
+    .wrapper {margin-top: -40vh;}
 }

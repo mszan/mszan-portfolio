@@ -1,0 +1,21 @@
+.wrapper {
+    height: 100vh;
+    scroll-snap-align: start;
+
+    .bg {
+        background-color: #202228;
+        width: 200vw;
+        height: 150vh;
+        box-shadow: none!important;
+    }
+
+    .title {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        max-width: 85vw;
+        filter: drop-shadow(0px 3px 6px rgba(33, 38, 27, 0.2));
+        color: #fff;
+        z-index: 10;
+    }
+}

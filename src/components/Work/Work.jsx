@@ -1,5 +1,5 @@
 import React from "react";
-import workClasses from "./Work.module.css"
+import workClasses from "./Work.module.scss"
 import {Card} from "./Card";
 // import thumbnailTodos from "./thumbnails/todos.png"
 // import thumbnailGerd from "./thumbnails/gerd.png"
@@ -30,7 +30,7 @@ export const Work = () => {
         return (
         <div
             id="work"
-            className={workClasses.workWrapper}
+            className={workClasses.wrapper}
         >
             <Card
                 id="1"
@@ -56,7 +56,7 @@ export const Work = () => {
                 description={<p>Simple architect portfolio built with <b>React.</b></p>}
                 thumbnail={thumbnailArchitect}
                 repoUrl="https://github.com/mszan/architect_portfolio"
-                demoUrl="https://github.com/mszan/architect_portfolio/deployments/activity_log?environment=github-pages"
+                demoUrl="https://mszan.github.io/architect_portfolio/"
                 icons={[iconReact]}
             />
             <Card

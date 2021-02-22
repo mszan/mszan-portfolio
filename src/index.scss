@@ -1,0 +1,78 @@
+// Open Sans - Google fonts.
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap";
+
+html {scroll-behavior: smooth !important;}
+
+body {
+  position: relative;
+  background-color: #1D2026;
+  color: #8A94A7;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+}
+
+* {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+::selection {
+  background: #0270d7 !important;
+  color: #1D2026 !important;
+}
+
+::-moz-selection {
+  background: #0270d7 !important;
+  color: #1D2026 !important;
+}
+
+// Thin horizontal line.
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-left: 0;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 16px 31px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 3px 15px rgba(33, 38, 27, .10);
+
+  &:hover {box-shadow: 0 3px 15px rgba(33, 38, 27, .15);}
+  &:focus {outline: none;}
+}
+
+// Light color button.
+.btnLight {
+  background-color: #3889F1;
+  color: #FFF !important;
+}
+
+// Dark color button.
+.btnDark {
+  background-color: #242830;
+  color: #FFF !important;
+}
+
+svg {
+  fill: #fff;
+  transition: fill 100ms ease-in-out;
+
+  &:hover {fill: #3889F1}
+}
+
+// Main wrapper (container).
+.container {
+  position: relative;
+  overflow-x: hidden;
+}

@@ -1,5 +1,5 @@
 import React from "react"
-import decorClasses from "./Decor.module.css"
+import decorClasses from "./Decor.module.scss"
 import {motion, useTransform, useViewportScroll} from "framer-motion";
 import {getRandomBlockRotation} from "../../../helpers/getRandomBlockRotation";
 
@@ -126,8 +126,8 @@ export const Decor = () => {
     ]
 
     return (
-        <div className={decorClasses.decorWrapper}>
-            <motion.div className={decorClasses.decorPathWrapper}>
+        <div className={decorClasses.wrapper}>
+            <motion.div className={decorClasses.pathsWrapper}>
                 <svg height="100%" width="100%"
                      xmlns="http://www.w3.org/2000/svg"
                 >
@@ -166,7 +166,7 @@ export const Decor = () => {
                 </svg>
             </motion.div>
 
-            <div className={decorClasses.decorBlocksWrapper}>
+            <div className={decorClasses.blocksWrapper}>
                 {decorBlocks.map((item, itemIndex) => (
                     <motion.div
                         whileHover={{
@@ -193,7 +193,7 @@ export const Decor = () => {
                         }}
                         key={itemIndex}
                         style={{...item.styles}}
-                        className={item.tone === "blue" ? decorClasses.decorBlockGradient : null}
+                        className={item.tone === "blue" ? decorClasses.gradient : null}
                     >
                     </motion.div>
                 ))}

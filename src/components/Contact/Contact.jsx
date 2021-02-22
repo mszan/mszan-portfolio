@@ -1,5 +1,5 @@
 import React from "react"
-import contactClasses from "./Contact.module.css"
+import contactClasses from "./Contact.module.scss"
 import {motion} from "framer-motion";
 import {init, send} from 'emailjs-com';
 import moment from "moment";
@@ -90,14 +90,14 @@ export class Contact extends React.Component {
             <React.Fragment>
                 <motion.div
                     id="contact"
-                    className={contactClasses.contactWrapper}
+                    className={contactClasses.wrapper}
                 >
-                    <div className={contactClasses.contactForm}>
-                        <div className={contactClasses.contactFormBg}>
+                    <div className={contactClasses.form}>
+                        <div className={contactClasses.bg}>
                             <div/>
                             <div/>
                         </div>
-                        <div className={contactClasses.contactFormInner}>
+                        <div className={contactClasses.inner}>
                             <input
                                 type="text"
                                 name="formName"
@@ -105,7 +105,7 @@ export class Contact extends React.Component {
                                 disabled={this.state.emailSent}
                                 onChange={this.formChangeHandler}
                             />
-                            <div className={contactClasses.contactFormInputBorder}/>
+                            <div className={contactClasses.inputBorder}/>
 
                             <input
                                 type="email"
@@ -116,7 +116,7 @@ export class Contact extends React.Component {
                             />
                             <div
                                 style={this.state.formEmailValid ? null : invalidInputStyle}
-                                className={contactClasses.contactFormInputBorder}
+                                className={contactClasses.inputBorder}
                             />
 
                             <textarea
@@ -128,7 +128,7 @@ export class Contact extends React.Component {
                             />
                             <div
                                 style={{top: -20}} // because textarea bottom-margin seems to be buggy
-                                className={contactClasses.contactFormInputBorder}
+                                className={contactClasses.inputBorder}
                             />
 
                             <button

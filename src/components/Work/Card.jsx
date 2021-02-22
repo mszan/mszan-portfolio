@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import cardClasses from "./Card.module.css"
+import cardClasses from "./Card.module.scss"
 import {motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 import Image from 'next/image'
@@ -33,15 +33,15 @@ export const Card = (props) => {
                 opacity: wrapperOpacity,
                 cursor: wrapperCursor,
             }}
-            className={cardClasses.cardWrapper}
+            className={cardClasses.wrapper}
             onClick={scrollToCard}
         >
-            <div className={cardClasses.cardBg}>
+            <div className={cardClasses.bg}>
                 <div/>
                 <div/>
             </div>
             <div
-                className={cardClasses.cardThumbnail}
+                className={cardClasses.thumbnail}
                 onClick={() => inView ? window.open(props.repoUrl, '_blank') : null}
             >
                 <Image
@@ -53,20 +53,20 @@ export const Card = (props) => {
                 />
             </div>
 
-            <div className={cardClasses.cardBottom}>
-                <div className={cardClasses.cardText}>
+            <div className={cardClasses.bottom}>
+                <div className={cardClasses.text}>
                     <h4>{props.title}</h4>
                     {props.icons.map((icon) => (
                         <img
                             src={icon}
                             alt={icon}
-                            className={cardClasses.cardIcon}
+                            className={cardClasses.icon}
                         />
                     ))}
                     {props.description}
                 </div>
             </div>
-            <div className={cardClasses.cardBtnsWrapper}>
+            <div className={cardClasses.btns}>
                 <motion.button
                     onClick={() => window.open(props.repoUrl, '_blank')}
                     className="btnDark"
