@@ -1,17 +1,6 @@
 import React from "react";
 import workClasses from "./Work.module.scss"
 import {Card} from "./Card";
-// import thumbnailTodos from "./thumbnails/todos.png"
-// import thumbnailGerd from "./thumbnails/gerd.png"
-// import thumbnailArchitect from "./thumbnails/architect.png"
-// import thumbnailSampleportfolio from "./thumbnails/sampleportfolio.png"
-// import thumbnailSellit from "./thumbnails/sellit.png"
-// import iconReact from "./icons/react.svg"
-// import iconNodeJS from "./icons/node-dot-js.svg"
-// import iconDjango from "./icons/django.svg"
-// import iconHTML from "./icons/html5.svg"
-// import iconCSS from "./icons/css3.svg"
-// import iconJS from "./icons/javascript.svg"
 
 const thumbnailTodos = "/thumbnails/todos.png"
 const thumbnailGerd = "/thumbnails/gerd.png"
