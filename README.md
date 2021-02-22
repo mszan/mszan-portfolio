@@ -1,1 +1,33 @@
-mszan_portfolio
+# My own portfolio
+## Table of contents
+* [General info](#general-info)
+* [Live demo](#live-demo)
+* [Project structure](#project-structure)
+    * [Components](#components)
+    * [Functions](#functions)
+
+
+## General info
+This is a website built with NextJS that describes me, displays my projects and allows users to contact me.
+![](https://i.imgur.com/OR6GrVY.png)
+
+## Live demo
+Live demo is available at [mszanowski.pl](https://mszanowski.pl).
+
+Website is hosted on VPS with nginx.
+
+## Project structure
+### Components
+- ``About`` - text describing me,
+- ``Contact`` - contact form and sending messages,
+- ``Footer`` - footer,
+- ``Home`` - landing page,
+  - ``Btns`` - buttons,
+  - ``Decor`` - decoration blocks on the right,
+- ``Sidebar`` - sidebar,
+- ``Work`` - my projects.
+
+<u>Note:</u> Each component has its SCSS module.
+
+### Functions:
+- ``getRandomBlockRotation`` - returns random block rotation degree that is used by ``Decor`` component.
