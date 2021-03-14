@@ -87,8 +87,7 @@ export function Home() {
                             marginBottom: "2rem"
                         }}
                     >
-                        A 21 years old IT student looking for his first full-time <br/> job as a Junior Frontend / Web
-                        Developer
+                        A 21 years old IT student.
                     </p>
                 </motion.div>
                 <Btns/>

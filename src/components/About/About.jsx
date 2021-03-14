@@ -9,8 +9,6 @@ export function About() {
                 <p>Hi there, I am 21 years old IT Management extramural student and I am in my second year now. In my
                     current profession as <span>IT Specialist</span> I have developed mostly in <span>network management, systems maintenance</span> and <span>end-user support provision.</span>
                 </p>
-                <p><span className={aboutClasses.subtitle}>I am currently looking for my first full-time job as a Junior Web / Frontend Developer.</span>
-                </p>
                 <p>Even though, at one time or another, I work with code in my full-time job, this is not as regular and
                     amplifying as I want it to be in the nearest future. My daily routine includes developing several
                     applications in <span>HTML, CSS</span> and <span>SQL</span>.</p>
