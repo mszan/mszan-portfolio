@@ -1,11 +1,4 @@
 # My own portfolio
-## Table of contents
-* [General info](#general-info)
-* [Live demo](#live-demo)
-* [Project structure](#project-structure)
-    * [Components](#components)
-    * [Functions](#functions)
-
 
 ## General info
 This is a website built with NextJS that describes me, displays my projects and allows users to contact me.
