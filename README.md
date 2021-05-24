@@ -7,8 +7,6 @@ This is a website built with NextJS that describes me, displays my projects and 
 ## Live demo
 Live demo is available at [mszanowski.pl](https://mszanowski.pl).
 
-Website is hosted on VPS with nginx.
-
 ## Project structure
 ### Components
 - ``About`` - text describing me,
@@ -19,8 +17,6 @@ Website is hosted on VPS with nginx.
   - ``Decor`` - decoration blocks on the right,
 - ``Sidebar`` - sidebar,
 - ``Work`` - my projects.
-
-<u>Note:</u> Each component has its SCSS module.
 
 ### Functions:
 - ``getRandomBlockRotation`` - returns random block rotation degree that is used by ``Decor`` component.
