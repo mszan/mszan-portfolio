@@ -31,3 +31,6 @@ package-lock.json
 # nextjs
 out
 .next
+
+.vscode
+.history
