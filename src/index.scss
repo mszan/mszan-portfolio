@@ -68,11 +68,19 @@ svg {
   fill: #fff;
   transition: fill 100ms ease-in-out;
 
-  &:hover {fill: #3889F1}
+  &:hover {fill: #acb5c2}
 }
 
 // Main wrapper (container).
 .container {
   position: relative;
   overflow-x: hidden;
+}
+
+._loading_overlay_wrapper {
+  height: 100%;
+}
+
+._loading_overlay_overlay {
+  background: #fff!important;
 }

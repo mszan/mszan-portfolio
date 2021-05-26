@@ -32,7 +32,7 @@ export class Sider extends React.Component {
                             <hr width={70}/>
                             {/* First link width. */}
                             {menuItems.map(item => (
-                                <li>
+                                <li key={item.anchor}>
                                     <p onClick={() => {
                                         document.querySelector('#' + item.anchor).scrollIntoView() // Scroll to given anchor.
                                         this.onSetSidebarOpen(!this.state.sidebarOpen)
@@ -64,8 +64,6 @@ export class Sider extends React.Component {
                 <div
                     onClick={() => {
                         this.onSetSidebarOpen(!this.state.sidebarOpen)
-                        console.log('POS 66: ', this.state.sidebarOpen)
-                        console.log('POS 67: ', "click")
                     }}
                     className="hamburgerWrapper"
                 >

@@ -10,7 +10,7 @@ export function About() {
                     previous profession as an <span>IT Specialist</span> I have developed mostly in <span>network management, systems maintenance</span> and <span>end-user support provision.</span>
                 </p>
                 <p>My technical skills include programming in <span>JavaScript</span> and <span>Python</span> along
-                    with <span>ReactJS, Django, NodeJS</span> and <span>GIT.</span><br/>I am familiar with <span>RWD, BEM, ABEM</span> and <span>SCSS</span>.
+                    with <span>ReactJS, Django, NodeJS</span> and <span>GIT.</span><br/>I am familiar with <span>Docker, TypeScript, RWD, BEM, ABEM</span>, <span>LESS, SCSS and much more</span>!
                     <br/>I have worked in and administrated operating systems such as macOS, Ubuntu and WS.</p>
                 <br/>
                 <div className={aboutClasses.social}>
@@ -24,7 +24,7 @@ export function About() {
                             <path d="M0,2.25,0,55.481H52.872l.36-53.231ZM16.088,47.877H8.2v-25.4h7.9v25.4ZM12.143,19a4.575,4.575,0,1,1,4.575-4.575A4.577,4.577,0,0,1,12.143,19ZM45.663,47.877h-7.89V35.52c0-2.947-.059-6.737-4.1-6.737-4.111,0-4.741,3.208-4.741,6.523V47.877h-7.89v-25.4h7.569v3.47h.107a8.31,8.31,0,0,1,7.474-4.1c7.985,0,9.47,5.264,9.47,12.108Z"/>
                         </svg>
                     </a>
-                    <p style={{marginTop: 0}}>You can find me on GitHub and LinkedIn.</p>
+                    <p style={{marginTop: 10}}>You can find me on GitHub and LinkedIn.</p>
                 </div>
             </div>
         </div>

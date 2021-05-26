@@ -29,7 +29,6 @@ export class Contact extends React.Component {
     didUserSendEmailLately = () => {
         // Check if user sent any message within last day.
         const timeLastEmailSent = moment(process.browser ? localStorage.getItem("timeLastEmailSent") : null)
-        console.log('POS 32: ', timeLastEmailSent)
         return timeLastEmailSent.add(1, "days").isAfter(moment())
     }
 
