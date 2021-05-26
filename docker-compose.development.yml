@@ -1,0 +1,14 @@
+services:
+    react:
+      container_name: mszan-portfolio
+      build:
+        context: .
+        dockerfile: Dockerfile.development
+      volumes:
+        - .:/app
+        - /app/node_modules
+      environment:
+        - REACT_APP_EMAILJS_USERID=${MSZAN_PORTFOLIO_REACT_APP_EMAILJS_USERID}
+      ports:
+        - 4000:3000
+        - 4005:9229
