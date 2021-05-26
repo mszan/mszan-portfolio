@@ -8,8 +8,6 @@ import {useInView} from "react-intersection-observer";
 import {useEffect} from "react";
 import {Footer} from "../src/components/Footer/Footer";
 import Head from "next/head";
-import LoadingOverlay from 'react-loading-overlay';
-import {useState} from "react";
 
 function FadeInWhenVisible({ children }) {
     const controls = useAnimation();
@@ -55,11 +53,6 @@ function FadeInWhenVisible({ children }) {
 }
 
 function App() {
-    const [overlayVisible, setOverlayVisible] = useState(true);
-    setTimeout(() => {
-        setOverlayVisible(false)
-    }, 150);
-
     return (
         <div className="container">
             <Head>
@@ -75,23 +68,18 @@ function App() {
                 <meta property="og:description" content="A 21 years old IT student." />
                 <meta name="twitter:title" content="Dawid Mszanowski" />
             </Head>
-            <LoadingOverlay
-                active={overlayVisible}
-                fadeSpeed={200}
-            >
-                <Sider />
-                <Home />
-                <FadeInWhenVisible>
-                    <About/>
-                </FadeInWhenVisible>
-                <FadeInWhenVisible>
-                    <Work />
-                </FadeInWhenVisible>
-                <FadeInWhenVisible>
-                    <Contact />
-                </FadeInWhenVisible>
-                <Footer />
-            </LoadingOverlay>
+            <Sider />
+            <Home />
+            <FadeInWhenVisible>
+                <About/>
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
+                <Work />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
+                <Contact />
+            </FadeInWhenVisible>
+            <Footer />
         </div>
     );
 }

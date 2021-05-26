@@ -37,6 +37,7 @@ export function Home() {
                     style={{
                         fontWeight: "lighter",
                         fontSize: 34,
+                        opacity: 0
                     }}
                     animate={{
                         x: ["-10vw", "0vw"],
@@ -54,6 +55,7 @@ export function Home() {
                     style={{
                         fontWeight: "normal",
                         fontSize: 65,
+                        opacity: 0
                     }}
                     animate={{
                         x: ["-10vw", "0vw"],
@@ -70,6 +72,9 @@ export function Home() {
                     <span style={{fontWeight: "bold"}}>&nbsp;Dawid</span>
                 </motion.div>
                 <motion.div
+                    style={{
+                        opacity: 0
+                    }}
                     animate={{
                         // x: ["-10vw", "0vw"],
                         opacity: [0, 0, 1]

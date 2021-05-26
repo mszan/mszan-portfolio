@@ -15,7 +15,7 @@ export const Decor = () => {
             styles: {
                 top: "17vh",
                 backgroundColor: "#0270D7",
-                opacity: ".5",
+                // opacity: ".5",
                 width: "450px",
                 height: "450px",
                 marginLeft: "15vw",
@@ -33,7 +33,7 @@ export const Decor = () => {
                 backgroundColor: "#00BFFB",
                 width: "20px",
                 height: "20px",
-                opacity: "0.3",
+                // opacity: "0.3",
                 y: useTransform(scrollY, [0, 1200], [0, 500]),
             }
         },
