@@ -3,8 +3,9 @@ import contactClasses from "./Contact.module.scss"
 import {motion} from "framer-motion";
 import {init, send} from 'emailjs-com';
 import moment from "moment";
-
-init(process.env.REACT_APP_EMAILJS_USERID);
+import getConfig from "next/config";
+const { publicRuntimeConfig } = getConfig();
+init(publicRuntimeConfig.REACT_APP_EMAILJS_USERID);
 
 export class Contact extends React.Component {
     constructor(props) {

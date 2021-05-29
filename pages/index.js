@@ -58,14 +58,14 @@ function App() {
             <Head>
                 <title>Dawid Mszanowski</title>
 
-                <meta name="description" content="A 21 years old IT student." />
+                <meta name="description" content="A 21 years old IT student and Full Time Junior Web Developer." />
                 <meta name="author" content="Dawid Mszanowski" />
-                <meta name="keywords" content="dawid mszanowski portfolio student developer frontend front-end front end junior web react reactjs" />
+                <meta name="keywords" content="dawid mszanowski portfolio student developer frontend front-end front end junior web react reactjs docker" />
                 <meta charSet="utf-8" />
 
-                <meta property="og:image" content="https://i.imgur.com/OR6GrVY.png" />
+                <meta property="og:image" content="https://i.imgur.com/o8x9wMA.png" />
                 <meta property="og:title" content="Dawid Mszanowski" />
-                <meta property="og:description" content="A 21 years old IT student." />
+                <meta property="og:description" content="A 21 years old IT student and Full Time Junior Web Developer." />
                 <meta name="twitter:title" content="Dawid Mszanowski" />
             </Head>
             <Sider />
