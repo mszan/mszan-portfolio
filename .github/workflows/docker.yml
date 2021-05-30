@@ -19,7 +19,7 @@ jobs:
         run: docker build -f Dockerfile.production -t mszan-portfolio-prod:1.0 . --build-arg REACT_APP_EMAILJS_USERID=foo
 
       - name: Docker container UP
-        run: docker container run --name mszan-portfolio -p 4000:3000 mszan-portfolio-prod:1.0
+        run: docker container run --name mszan-portfolio -d -p 4000:3000 mszan-portfolio-prod:1.0
 
   deploy:
     name: Deploy to production
