@@ -46,3 +46,4 @@ jobs:
             docker system prune --force
             docker build -f Dockerfile.production -t mszan-portfolio-prod:1.0 . --build-arg REACT_APP_EMAILJS_USERID=$PRODUCTION_VPS_APP_EMAILJS_USERID
             docker container run --name mszan-portfolio -d -p $PRODUCTION_VPS_APP_PORT:3000 mszan-portfolio-prod:1.0
+            
