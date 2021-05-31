@@ -20,6 +20,3 @@ Live demo is available at [mszanowski.pl](https://mszanowski.pl).
 
 ### Functions:
 - ``getRandomBlockRotation`` - returns random block rotation degree that is used by ``Decor`` component.
-
-## Environment variables
-- ``REACT_APP_EMAILJS_USERID`` - [EmailJS](https://www.emailjs.com/) user ID

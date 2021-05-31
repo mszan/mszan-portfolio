@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.REPO_TOKEN }}
 
       - name: Docker container BUILD
-        run: docker build -f Dockerfile.production -t mszan-portfolio-prod:1.0 . --build-arg REACT_APP_EMAILJS_USERID=foo
+        run: docker build -f Dockerfile.production -t mszan-portfolio-prod:1.0 . --build-arg REACT_APP_EMAILJS_USERID=foo --no-cache
 
       - name: Docker container UP
         run: docker container run --name mszan-portfolio -d -p 4000:3000 mszan-portfolio-prod:1.0
@@ -38,12 +38,11 @@ jobs:
           username: ${{ secrets.PRODUCTION_VPS_USERNAME }}
           key: ${{ secrets.PRODUCTION_VPS_KEY }}
           command_timeout: 30m
-          envs: PRODUCTION_VPS_APP_PORT,PRODUCTION_VPS_APP_EMAILJS_USERID
+          envs: PRODUCTION_VPS_APP_EMAILJS_USERID,PRODUCTION_VPS_APP_PORT
           script: |
             cd mszan-portfolio
             git pull origin master
             docker stop mszan-portfolio
             docker system prune --force
-            docker build -f Dockerfile.production -t mszan-portfolio-prod:1.0 . --build-arg REACT_APP_EMAILJS_USERID=$PRODUCTION_VPS_APP_EMAILJS_USERID
+            docker build -f Dockerfile.production -t mszan-portfolio-prod:1.0 . --build-arg REACT_APP_EMAILJS_USERID=$PRODUCTION_VPS_APP_EMAILJS_USERID --no-cache
             docker container run --name mszan-portfolio -d -p $PRODUCTION_VPS_APP_PORT:3000 mszan-portfolio-prod:1.0
-            
