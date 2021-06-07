@@ -6,11 +6,11 @@ export function About() {
         <div id="about" className={aboutClasses.wrapper}>
             <div className={aboutClasses.content}>
                 <h1 className={aboutClasses.title}>Dawid Mszanowski</h1>
-                <p>Hi there, I am 21 years old IT Management extramural student and I am in my second year now. I am currently working as a <span>Full Time Junior Web Developer</span>. In my
+                <p>Hi there, I am 21 years old IT Management extramural student and I am in my second year now. I have recently started working as a <span>Full Time Junior Web Developer</span>. In my
                     previous profession as an <span>IT Specialist</span> I have developed mostly in <span>network management, systems maintenance</span> and <span>end-user support provision.</span>
                 </p>
-                <p>My technical skills include programming in <span>JavaScript</span> and <span>Python</span> along
-                    with <span>ReactJS, Django, NodeJS</span> and <span>GIT.</span><br/>I am familiar with <span>Docker, TypeScript, RWD, BEM, ABEM</span>, <span>LESS, SCSS and much more</span>!
+                <p>My technical skills currently include programming in <span>JavaScript</span> and <span>Python</span> along
+                    with <span>ReactJS, Django, NodeJS</span><span>.</span><br/>I am familiar with <span>Docker, GIT, TypeScript, RWD, BEM, ABEM</span>, <span>LESS, SCSS and much more</span>!
                     <br/>I have worked in and administrated operating systems such as macOS, Ubuntu and WS.</p>
                 <br/>
                 <div className={aboutClasses.social}>
