@@ -4,9 +4,6 @@
 This is a website built with NextJS that describes me, displays my projects and allows users to contact me.
 ![](https://i.imgur.com/o8x9wMA.png)
 
-## Live demo
-Live demo is available at [mszanowski.pl](https://mszanowski.pl).
-
 ## Project structure
 ### Components
 - ``About`` - text describing me,
