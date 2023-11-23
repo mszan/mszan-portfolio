@@ -1,28 +1,28 @@
-import React, {useEffect, useState} from "react";
-import cardClasses from "./Card.module.scss"
-import {motion} from "framer-motion";
-import {useInView} from "react-intersection-observer";
-import Image from 'next/image'
+import React, { useEffect, useState } from "react";
+import cardClasses from "./Card.module.scss";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 export const Card = (props) => {
     const [wrapperOpacity, setWrapperOpacity] = useState(1);
     const [wrapperCursor, setWrapperCursor] = useState("default");
     const [ref, inView] = useInView({
-        rootMargin: "-45%"
-    })
+        rootMargin: "-45%",
+    });
 
     const scrollToCard = () => {
-        const workEl = document.getElementById("work")
+        const workEl = document.getElementById("work");
         workEl.scrollLeft = (props.id - 1) * window.innerWidth * 0.65;
-    }
+    };
 
     useEffect(() => {
         if (inView) {
-            setWrapperOpacity(1)
-            setWrapperCursor("default")
+            setWrapperOpacity(1);
+            setWrapperCursor("default");
         } else {
-            setWrapperOpacity(0.2)
-            setWrapperCursor("pointer")
+            setWrapperOpacity(0.2);
+            setWrapperCursor("pointer");
         }
     }, [inView]);
 
@@ -37,15 +37,17 @@ export const Card = (props) => {
             onClick={scrollToCard}
         >
             <div className={cardClasses.bg}>
-                <div/>
-                <div/>
+                <div />
+                <div />
             </div>
             <div
                 className={cardClasses.thumbnail}
-                onClick={() => inView ? window.open(props.repoUrl, '_blank') : null}
+                onClick={() =>
+                    inView ? window.open(props.repoUrl, "_blank") : null
+                }
             >
                 <Image
-                    src={props.thumbnail}
+                    src={`/mszan-portfolio/` + props.thumbnail}
                     alt={props.title}
                     layout="fill"
                     objectFit="cover"
@@ -69,27 +71,37 @@ export const Card = (props) => {
             </div>
             <div className={cardClasses.btns}>
                 <motion.button
-                    onClick={() => window.open(props.repoUrl, '_blank')}
+                    onClick={() => window.open(props.repoUrl, "_blank")}
                     className="btnDark"
                     whileHover={{
                         scale: 0.9,
-                        transition: {type: "spring", stiffness: 700, duration: 0.5}
+                        transition: {
+                            type: "spring",
+                            stiffness: 700,
+                            duration: 0.5,
+                        },
                     }}
-                >REPOSITORY
+                >
+                    REPOSITORY
                 </motion.button>
                 <motion.button
-                    onClick={() => window.open(props.demoUrl, '_blank')}
+                    onClick={() => window.open(props.demoUrl, "_blank")}
                     className="btnLight"
                     style={{
-                        whiteSpace: "nowrap"
+                        whiteSpace: "nowrap",
                     }}
                     whileHover={{
                         scale: 0.9,
-                        transition: {type: "spring", stiffness: 700, duration: 0.5}
+                        transition: {
+                            type: "spring",
+                            stiffness: 700,
+                            duration: 0.5,
+                        },
                     }}
-                >LIVE DEMO
+                >
+                    LIVE DEMO
                 </motion.button>
             </div>
         </div>
     );
-}
+};

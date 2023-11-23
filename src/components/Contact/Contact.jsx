@@ -73,7 +73,7 @@ export class Contact extends React.Component {
      */
     sendEmail = () => {
         this.setState({emailSent: true})
-        send("default_service", "template_3e09je6", {
+        send("default_service", "template_01r47bf", {
             "to_name": this.state.formName,
             "from_name": this.state.formEmail,
             "message": this.state.formMsg,
