@@ -47,7 +47,7 @@ export const Card = (props) => {
                 }
             >
                 <Image
-                    src={`/mszan-portfolio/` + props.thumbnail}
+                    src={props.thumbnail}
                     alt={props.title}
                     layout="fill"
                     objectFit="cover"
