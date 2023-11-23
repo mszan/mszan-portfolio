@@ -12,13 +12,23 @@
         scroll-snap-align: start;
         position: relative;
         padding: 0 10vw 0 10vw;
-        text-shadow: 0 3px 15px rgba(33, 38, 27, .20);
+        text-shadow: 0 3px 15px rgba(33, 38, 27, 0.2);
         p {
             font-size: 1rem;
             text-align: justify;
             width: 100%;
             span {
                 font-weight: normal;
+            }
+        }
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: #0270d7;
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }

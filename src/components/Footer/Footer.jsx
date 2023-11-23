@@ -8,17 +8,17 @@ export class Footer extends React.Component {
 
     render() {
         return (
-            <div style={{
-                position: "absolute",
-                width: "100%",
-                bottom: 25,
-                left: 0,
-                textAlign: "center",
-                color: "#7d96b1"
-            }}>
-                <span>
-                    2020 &copy; Dawid Mszanowski
-                </span>
+            <div
+                style={{
+                    position: "absolute",
+                    width: "100%",
+                    bottom: 25,
+                    left: 0,
+                    textAlign: "center",
+                    color: "#7d96b1",
+                }}
+            >
+                <span>2023 &copy; Dawid Mszanowski</span>
             </div>
         );
     }
